@@ -94,11 +94,11 @@ class UpgradeCard extends UpgradeBase {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(message),
-                Padding(
-                    padding: const EdgeInsets.only(top: 15.0),
-                    child: Text(
-                        upgrader.messages.message(UpgraderMessage.prompt) ??
-                            '')),
+                // Padding(
+                //     padding: const EdgeInsets.only(top: 15.0),
+                //     child: Text(
+                //         upgrader.messages.message(UpgraderMessage.prompt) ??
+                //             '')),
                 if (notes != null) notes,
               ],
             ),
@@ -135,7 +135,7 @@ class UpgradeCard extends UpgradeBase {
                     // Save the date/time as the last time alerted.
                     upgrader.saveLastAlerted();
 
-                    upgrader.onUserUpdated(context, false);
+                    // upgrader.onUserUpdated(context, false);
                     state.forceUpdateState();
                   }),
             ]));
