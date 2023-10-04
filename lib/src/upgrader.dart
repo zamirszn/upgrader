@@ -752,9 +752,9 @@ class Upgrader with WidgetsBindingObserver {
       _saveIgnored();
     }
 
-    if (shouldPop) {
-      popNavigator(context);
-    }
+    // if (shouldPop) {
+    //   popNavigator(context);
+    // }
   }
 
   void onUserLater(BuildContext context, bool shouldPop) {
@@ -770,9 +770,9 @@ class Upgrader with WidgetsBindingObserver {
 
     if (doProcess) {}
 
-    if (shouldPop) {
-      popNavigator(context);
-    }
+    // if (shouldPop) {
+    //   popNavigator(context);
+    // }
   }
 
   void onUserUpdated(BuildContext context, bool shouldPop) {
@@ -790,9 +790,9 @@ class Upgrader with WidgetsBindingObserver {
       _sendUserToAppStore();
     }
 
-    if (shouldPop) {
-      popNavigator(context);
-    }
+    // if (shouldPop) {
+    //   popNavigator(context);
+    // }
   }
 
   static Future<void> clearSavedSettings() async {
@@ -804,10 +804,10 @@ class Upgrader with WidgetsBindingObserver {
     return;
   }
 
-  void popNavigator(BuildContext context) {
-    Navigator.of(context).pop();
-    _displayed = false;
-  }
+  // void popNavigator(BuildContext context) {
+  //   Navigator.of(context).pop();
+  //   _displayed = false;
+  // }
 
   Future<bool> _saveIgnored() async {
     var prefs = await SharedPreferences.getInstance();
